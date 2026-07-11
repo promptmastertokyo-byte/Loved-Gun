@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## 2026-07-12
+
+### Added
+- Master A-Rank Layout Guide
+- Color Keyframe Guide
+- A-rank layout and color-keyframe production workflow
+- Scene 03 visual standard for the Emotion Bank
+
+### Production Direction
+- Create approximately 30 master A-rank layouts first
+- Preserve camera, perspective, character placement and negative space during colorization
+- Use approved color keyframes as Seedance Image-to-Video inputs
+- Expand to B/C-rank shots only after representative video tests
+
+### Milestone
+✅ Storyboard design complete  
+🟨 Master Layout / Color Keyframe Phase started
+
 ## 2026-07-11
 
 ### Added
@@ -23,8 +41,10 @@
 ✅ Screenplay Phase Complete
 
 ## Next Phase
-- Storyboard
-- Character Design
+- Complete 30 master A-rank layouts
+- Complete matching color keyframes
+- Run Seedance tests on 5–10 representative shots
+- Character Design refinement
 - Background Design
 - Pitch Deck
 - Festival Package
