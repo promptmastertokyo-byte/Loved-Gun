@@ -12,17 +12,29 @@
 - [x] TVシリーズ全12話構想
 - [x] TVアニメ第1話脚本 第1稿
 - [x] 20分短編版 Beat Sheet
-- [ ] Short Film Bible
-- [ ] 20分短編 Treatment
-- [ ] 20分短編 Screenplay Draft 1
+- [x] Short Film Bible（Logline/Synopsis/World Bible/Character Bible/Runtime Table/
+      Cut Estimate/Sound Design/Key Visualとして分割整備済み）
+- [x] 20分短編 Treatment
+- [x] 20分短編 Screenplay Draft 1〜03（Draft03を正式版として採用）
+- [x] 絵コンテ／カットリスト（`storyboard/`、全216カット、Seedance Prompt付き）
 - [ ] 制作向け脚本決定稿
-- [ ] 絵コンテ／カットリスト
 - [ ] キャラクターデザイン設定
-- [ ] 美術・色彩・音響設計
-- [ ] 1,000万円版予算書
+- [ ] 美術・色彩・音響設計（Sound Designは初稿済み、美術・色彩設計は`storyboard/
+      STORYBOARD_BIBLE.md`で方向性を確定、確定稿は別途）
+- [ ] 1,000万円版予算書（Assumptionsのみ済み、詳細予算書は別途）
 - [ ] 制作スケジュール
 - [ ] ピッチデック
 - [ ] 映画祭応募資料
+
+## Storyboard Phase 進捗（2026-07-11）
+
+- [x] `storyboard/STORYBOARD_BIBLE.md` — 画面構成・色彩・ライティング・カメラ・遷移ルール
+- [x] `storyboard/SHOTLIST.md` — 全216カットのマスター表
+- [x] `storyboard/scene01.md`〜`scene16.md`、`after_credit.md` — 全カットの詳細絵コンテ＋
+      Seedance Prompt
+- [x] `storyboard/PRODUCTION_REVIEW.md` — Seedance適性レビューと改善記録
+- 進捗率：**Storyboard Phase 100%**（次工程：キャラクターデザイン確定、背景美術確定、
+  キャラクター基準画像の管理表作成、Seedanceでのテスト生成）
 
 ## 短編版の制作方針
 
