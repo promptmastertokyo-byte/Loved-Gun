@@ -1,5 +1,7 @@
 # LOVED GUN / ラブドガン
 
+![LOVED GUN Key Visual](./assets/key-visual/loved-gun-key-visual-v1.png)
+
 自作小説『ラブドガン』を原作とする、短編アニメーション映画およびシリーズ企画の制作リポジトリです。
 
 > 忘れたいのは、君じゃなかった。
@@ -45,16 +47,16 @@
 
 ```text
 Loved-Gun/
-├── project/        # ビジョン、ロードマップ、進捗
-├── world-bible/    # 公開可能な世界設定
-├── characters/     # キャラクター設定
-├── screenplay/     # 脚本・トリートメント
-├── series/         # シリーズ構成
-├── storyboard/     # 絵コンテ・カットリスト
-├── concept-art/    # コンセプトアート
-├── pitch/          # 企画提案資料
-├── budget/         # 予算・制作計画
-└── festival/       # 映画祭応募資料
+├── project/
+├── world-bible/
+├── characters/
+├── screenplay/
+├── series/
+├── storyboard/
+├── concept-art/
+├── pitch/
+├── budget/
+└── festival/
 ```
 
 ## 開発ロードマップ
