@@ -24,20 +24,21 @@ production/sd-pipeline/
 | shot_type | 下記6分類のいずれか |
 | controlnet | 必要なControlNetの種類 |
 | characters | 登場キャラクター（LoRA選定に使用） |
+| pose_description | `character_pose_needed`の99カットのみ、`Composition`欄から抽出した姿勢の説明（日本語）。ポーズ画像を探す/描く際の手がかりとして使う |
 | sd_prompt | Seedance Promptから静止画向けに変換したプロンプト（英語） |
 
 ### shot_type の6分類（216カット中の内訳）
 
 | shot_type | カット数 | 意味 | 必要な準備 |
 |---|---:|---|---|
-| character_pose_needed | 97 | 全身/中景でキャラの姿勢が構図に影響する | OpenPose用ポーズ画像＋キャラLoRA |
-| face_closeup | 83 | 顔クローズのみ、姿勢は構図に影響しない | キャラLoRA（＋IP-Adapter顔参照があれば理想） |
-| hand_insert | 17 | 手・指のインサート | 深度画像（任意）、必要ならLoRA |
+| character_pose_needed | 99 | 全身/中景でキャラの姿勢が構図に影響する | OpenPose用ポーズ画像＋キャラLoRA |
+| face_closeup | 82 | 顔クローズのみ、姿勢は構図に影響しない | キャラLoRA（＋IP-Adapter顔参照があれば理想） |
+| hand_insert | 16 | 手・指のインサート | 深度画像（任意）、必要ならLoRA |
 | object_insert_no_character | 13 | キャラなし、物のみ（写真・しおり・銃等） | ControlNet不要 |
 | environment_only | 5 | キャラなしの背景・環境ショット | ControlNet不要 |
 | solid_color | 1 | 全黒/全白フレーム（CUT001等） | **生成不要**（単色画像を直接用意） |
 
-**ポーズ画像が実際に必要なのは97カットだけ**（全体の45%）。それ以外の119カットは
+**ポーズ画像が実際に必要なのは99カットだけ**（全体の46%）。それ以外の117カットは
 キャラLoRAのみ、または生成そのものが不要。
 
 ## 使う前に必要なもの（このリポジトリの外で用意するもの）
@@ -46,7 +47,7 @@ production/sd-pipeline/
 2. **キャラクターLoRA**を4体分（陽・クラ・栞・小面）。前段で作成予定の
    キャラクター基準画像シートを学習データにする。
 3. **ControlNetモデル**（OpenPose用・深度用）
-4. **ポーズ参照画像**97カット分（`character_pose_needed`の行）。既存ポーズ画像
+4. **ポーズ参照画像**99カット分（`character_pose_needed`の行）。既存ポーズ画像
    （Posemaniacs、OpenPoseサンプル集等）から`Composition`/`Camera`欄に近いものを選び、
    `CUT###.png`の名前で1ディレクトリに集める。
 
@@ -85,7 +86,7 @@ python comfyui_batch_driver.py --pose-dir ./poses --out-dir ./renders
 ## 次のステップ
 
 1. キャラクター基準画像シート（陽・クラ・栞・小面）を作成 → LoRA学習
-2. `character_pose_needed`97カット分のポーズ画像を`poses/`に用意
+2. `character_pose_needed`99カット分のポーズ画像を`poses/`に用意
 3. ComfyUIで実グラフを組んでAPI形式JSONを書き出し、本スクリプトに統合
 4. Scene 10（感情暴走）などVFXピーク以外の低難度シーンから小規模テスト
 5. 生成した静止画をSeedance（Image-to-Video）へ投入し、各CUTのSeedance Promptで動画化
