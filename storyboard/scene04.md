@@ -131,7 +131,7 @@ Bible準拠：ミントグリーンは栞の痕跡としてここで初登場。
 - **Duration**: 5.0s
 - **Camera**: Fixed / インサート（ミントグリーン初登場）
 - **Composition**: 机の横に掛かるミント色のストラップのクローズ
-- **Lens**: 100mm相当
+- **Lens**: 85mm相当
 - **Character**: なし
 - **Background**: 机の脚、教室の光
 - **Lighting**: 朝の柔らかい順光、ミントの彩度だけ他より高く見える（Bible §6準拠）

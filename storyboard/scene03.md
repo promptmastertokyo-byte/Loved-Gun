@@ -64,7 +64,7 @@ Bible準拠：店内は暖色・深紅・真鍮・紫のみ。雨音を完全遮
 - **Duration**: 2.0s
 - **Camera**: Fixed / 超クローズ
 - **Composition**: 陽の喉のクローズ、喉仏が動く
-- **Lens**: 100mm相当
+- **Lens**: 85mm相当
 - **Character**: 陽
 - **Background**: ボケた店内
 - **Lighting**: 暖色の弱いリム
@@ -319,7 +319,7 @@ Bible準拠：店内は暖色・深紅・真鍮・紫のみ。雨音を完全遮
 - **Duration**: 4.0s
 - **Camera**: Fixed / インサート
 - **Composition**: 陽の目、写真を見つめる
-- **Lens**: 100mm相当
+- **Lens**: 85mm相当
 - **Character**: 陽の目
 - **Background**: ボケ
 - **Lighting**: 弱いハイライトが瞳に
