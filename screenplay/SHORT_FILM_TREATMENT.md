@@ -1,116 +1,270 @@
 # LOVED GUN — SHORT FILM TREATMENT
 
-Version 0.1  
-Target runtime: 18–20 minutes
+Version 1.0  
+想定尺：18〜20分
 
-## Opening
+## Logline
 
-Black screen. Rain, a distant train, a pedestrian signal and wet footsteps build the city before the first image appears.
+失恋の痛みから逃れるため「感情銀行」に恋を預けた高校生・春川陽は、相手の名前だけでなく、その人が存在した実感まで失ってしまう。街に残る痕跡を追ううち、封じた感情が暴走。陽は、忘却ではなく痛みを取り戻すことを選ぶ。
 
-Harukawa Yo walks through a shuttered shopping street. He carries a closed umbrella and lets the rain soak him. On his phone, an unsent message reads only, “I want to talk.” The recipient is hidden.
+## Theme
 
-A small metal sign moves in the wind: **Emotion Bank**.
+> 忘れたいのは、君じゃなかった。
 
-Yo opens the old door. A bell rings, and the rain becomes distant.
+忘れることと前へ進むことは違う。痛みは弱さではなく、大切な時間が存在した証明である。
 
-## The Emotion Bank
+## Treatment
 
-The interior looks like a café, an antique shop and a bank at the same time. Red furniture, brass fixtures and shelves of objects whose purpose is unclear.
+黒画面。雨の音。遠くを走る電車。歩行者用信号の電子音。濡れた靴が水を踏む音。
 
-Kura, wearing a purple shirt, looks up from a magazine. He does not ask Yo why he came. He observes that Yo has not slept or eaten and asks, almost casually, whether he has been rejected.
+やがて映像が現れる。夕方の商店街。制服姿の春川陽が、閉じた透明傘を持ったまま雨の中を歩いている。肩も髪も濡れている。スマートフォンには、送信されていない短い文章が残っている。
 
-Yo asks what the shop does. Kura answers, “We hold things people can’t carry.”
+「話したい」
 
-Yo wants the pain removed. Kura places a strange terminal on the counter and explains only that every deposit has a cost. Yo does not ask what the cost will be. He produces a damaged photograph of himself beside a girl whose face is hidden by reflected rain.
+宛先は画面外に隠れ、名前は見えない。陽は文章を削除しようとして指を止め、画面を消す。
 
-The photograph dissolves into pale particles. The weight leaves Yo’s chest. At the same time, the warmth and colour of the room fade.
+閉店した店が並ぶ路地の先に、古い看板が見える。
 
-## The Empty Place
+《感情銀行》
 
-Yo leaves the shop. The rain has stopped. He should feel relieved, but his expression is blank.
+陽は立ち止まる。銀行には見えない。喫茶店、古書店、骨董屋のどれにも見える。扉を開くと小さな鈴が鳴り、それまで聞こえていた雨音が突然遠のく。
 
-The next morning, a seat beside him in class feels occupied even though it is empty. A mint-green strap hangs from the desk. A friend asks whether Yo spoke to “her.” Yo does not understand.
+店内には赤いソファ、古いカウンター、真鍮の照明。黒板には意味の分からない文字が並ぶ。「本日の感情レート」「追憶・低下中」。紫のシャツを着た男、時守クラが雑誌を逆さまに読んでいる。
 
-At home, a photograph on his desk has an impossible blank space. His mother begins to mention the girl who used to walk him home, then loses the thought herself.
+クラは陽を一目見て言う。
 
-That night Yo dreams of a rooftop at sunset. A long-haired girl stands beyond the light. Her face cannot be seen. She says, “See you.” When Yo tries to reach her, the world turns white.
+「眠れてないね」
 
-He wakes and discovers a mint-coloured bookmark on his desk. Its reverse side is blank. When he touches it, a girl’s laugh appears for less than a second.
+陽は答えない。
 
-## Searching the Traces
+「食欲もない」
 
-Yo begins to search for the person erased from his life.
+クラは雑誌を閉じる。
 
-At school he finds traces without a name: a library card with an empty line, two drinks remembered by a vending machine selection, space for a second umbrella, a doodle in the margin of his notebook.
+「失恋した？」
 
-The evidence does not restore the memory. It makes the absence unbearable.
+陽の喉が詰まる。クラは何も説明せず、カウンターの奥から虹色の光が流れる端末を取り出す。
 
-At a crowded station, Yo finally says aloud, “Who were you?”
+「預ける？」
 
-Sound falls away. Dark particles emerge from his shadow. Nearby strangers begin to express grief, anger and fear that do not belong to the moment. A streetlight bursts. Yo’s shadow moves half a beat after his body.
+陽は迷う。胸ポケットから折れ曲がった写真を出す。放課後の屋上で、陽と長い髪の少女が並んでいる。しかし雨粒と折り目で、少女の顔だけが見えない。
 
-## The Gun
+「これを見なくて済むなら」
 
-Kura enters the silent crowd carrying a black case. He opens it and reveals a gun-like device.
+クラは写真を受け取る。
 
-Yo asks whether it can make him forget again.
+「見なくて済むのと、なかったことになるのは違うよ」
 
-Kura answers, “The opposite.”
+陽は、それでもうなずく。
 
-He points it at Yo but cannot fire. The device requires Yo’s choice. Kura tells him that pain cannot be returned to someone who still insists it belongs to nobody.
+端末に写真をかざす。紙が燃えるのではなく、光の粒になって少しずつほどけていく。少女の輪郭が先に消え、最後に陽の笑顔が消える。
 
-Yo admits that he did not want to forget the girl. He wanted to avoid accepting that the relationship, and perhaps the girl herself, was gone.
+契約書の署名欄に、陽が自分の名前を書く。
 
-He asks Kura to return what he gave away.
+その瞬間、店内の音が薄くなる。赤いソファの色も、真鍮の照明も、少しだけ彩度を失う。胸にあった痛みが消え、陽は深く息を吐く。
 
-## The White World
+「軽くなった」
 
-The station dissolves into a white and grey emotional space. The girl appears clearly for the first time.
+クラは笑わない。
 
-Yo says her name: Shiori.
+「そう」
 
-Colour returns in fragments of sunset orange and mint green.
+陽は店を出る。外では雨が止んでいる。空は明るい。だが、濡れた道路の匂いを嗅いでも何も感じない。
 
-Memories arrive not as exposition but as brief ordinary moments: sharing an umbrella, exchanging books, drinking on the rooftop, walking without speaking. Shiori gives Yo a bookmark and says, “You put one in a page you don’t want to lose.”
+翌朝。陽はいつも通り学校へ向かう。歯磨き、制服のボタン、駅までの道。すべては正常だが、動作が半拍遅れている。
 
-Yo apologises for trying to erase her. Shiori does not ask him to remember everything. She asks him to continue living without treating their time as a wound that must be removed.
+教室で友人が声をかける。
 
-## Loved Gun
+「昨日、あの子と話せた？」
 
-Kura raises the device again.
+陽は聞き返す。
 
-“This will hurt.”
+「あの子って？」
 
-Yo accepts.
+友人たちの間に短い沈黙が生まれる。笑ってごまかされるが、陽の隣の席は空いている。机の横にはミント色の小さなストラップが揺れている。
 
-The sound is not a gunshot. It is a clear crack, like a fracture passing through glass. The black shadow separates into thousands of small pieces of memory and light.
+陽はそれを見ても何も思い出せない。ただ、胸の奥に小さな空洞がある。
 
-Yo cries for the first time. The tears are not proof that he is broken. They are proof that the feeling belongs to him again.
+帰宅。机の上の写真立て。陽一人だけが写り、右側が不自然に切れている。陽の肩だけが誰かへ傾いている。
 
-Shiori smiles and says, “Not goodbye. See you.”
+母が廊下から声をかける。
 
-She dissolves into wind and light.
+「最近、あの子は来ないの？」
 
-## Ending
+陽が振り返ると、母は自分の言葉に戸惑う。
 
-Yo walks through the city after the rain. A bookmark blows across the pavement. He picks it up. Words slowly appear on the reverse side: “See you.”
+「……あれ。誰の話だったかしら」
 
-Across the pedestrian crossing stands a slender figure in a black suit and white Ko-omote mask. The figure watches Yo without moving.
+夜。陽は夢を見る。夕焼けの屋上。長い髪の少女がフェンスの前に立っている。顔は逆光で見えない。
 
-A truck passes between them. The figure is gone.
+少女は振り返らずに言う。
 
-From the Emotion Bank window, Kura watches the empty crossing.
+「またね」
 
-“Someone saw us.”
+陽が近づこうとすると、屋上も空も少女も、白い光に塗り潰される。
 
-Cut to black.
+陽は目を覚ます。午前二時。机の端に、見覚えのないミント色のしおりが置かれている。裏面は無地。
+
+指で触れると、一瞬だけ少女の笑い声が聞こえる。
+
+翌日、陽は自分から痕跡を探し始める。
+
+図書室。貸出カードの自分の名前の隣に、インクが滲んだ空白がある。屋上。ベンチの前に、二人分の缶飲料の輪染み。傘立て。陽の傘の隣だけが不自然に空いている。
+
+誰かがいた。
+
+しかし名前だけが存在しない。
+
+夕方の駅前。人混みの中でミントの香りがする。陽は振り返り、長い髪の少女の後ろ姿を見つける。追いかけるが、人に遮られ見失う。
+
+「誰だったんだよ」
+
+陽が絞り出すように言う。
+
+その瞬間、街の音が消える。
+
+陽の足元から黒い粒子が漏れ出す。影が本人より遅れて動き、やがて別の人間のように立ち上がる。周囲の人々が突然泣き、怒り、立ち尽くす。陽の空白が他人の感情へ共鳴していく。
+
+街灯が割れる。
+
+陽は自分の頭を抱える。
+
+「やめろ」
+
+黒い影は止まらない。
+
+そこへクラが現れる。いつもの軽い笑みはない。手には黒いケース。ケースを開くと、黒い金属の銃が現れる。銃身には心臓と鍵を組み合わせたような刻印。
+
+陽は銃を見る。
+
+「それで、忘れられる？」
+
+クラは銃を構える。
+
+「逆だよ」
+
+クラが引き金に指をかける。しかし動かない。
+
+「君が選ばないと、これは撃てない」
+
+陽は苦しみながら、自分の影を見る。忘れたかったのではない。別れが本当になるのが怖かった。相手のいない世界を生きるのが怖かった。
+
+陽はクラを見る。
+
+「思い出したら、また苦しくなる？」
+
+「なる」
+
+「消えない？」
+
+「たぶんね」
+
+陽は少し笑う。
+
+「じゃあ、返してください」
+
+クラが一歩近づく。黒い影が二人を飲み込む。
+
+白と灰色だけの世界。
+
+遠くに少女が立っている。今度は顔が見える。栞。
+
+陽はすぐに名前を言えない。唇だけが動く。栞は急かさず待つ。
+
+やがて陽が言う。
+
+「栞」
+
+名前を呼んだ瞬間、白い世界に夕焼けの色が差し込む。
+
+記憶の断片が戻る。
+
+雨の日、一本の傘に入る二人。図書室で本を押しつけ合う二人。屋上でパンを分ける二人。帰り道、栞がミント色のしおりを差し出す。
+
+「忘れたくないページには、しおりを挟むの」
+
+陽は記憶の中の自分が笑っているのを見る。
+
+栞が言う。
+
+「忘れなくていい。でも、止まらなくていい」
+
+陽の目に涙が溜まる。契約の代償で、これまで涙は落ちなかった。
+
+クラが銃を構える。
+
+「これは痛いよ」
+
+陽はうなずく。
+
+引き金が引かれる。
+
+銃声ではない。ガラスの奥で小さな鐘が鳴り、亀裂が走るような澄んだ音。
+
+黒い影が砕ける。粒子は空へ消えず、陽の胸へ戻っていく。
+
+陽は膝をつく。胸を押さえる。痛みが戻る。呼吸が乱れる。そして、初めて涙が落ちる。
+
+栞が微笑む。
+
+「バイバイじゃなくて」
+
+陽が続ける。
+
+「またね」
+
+栞は風と夕焼けの光に溶ける。
+
+現実。駅前の音が戻る。人々は何事もなかったように歩き始める。
+
+陽は感情銀行のソファで目を覚ます。クラがペパーミントティーを置く。
+
+「全部、戻った？」
+
+「全部じゃない」
+
+陽はカップから立つ湯気を見る。
+
+「でも、いたことは分かる」
+
+クラは小さくうなずく。
+
+陽が店を出る。雨は止み、雲の隙間から光が差している。
+
+風に飛ばされたミント色のしおりが足元へ落ちる。陽が拾う。裏面に、薄い文字が浮かんでいる。
+
+「またね。」
+
+陽はしおりをポケットへ入れる。
+
+横断歩道の向こう側。黒いスーツと白い小面を身につけた人物が立っている。
+
+陽と小面の視線が合う。
+
+大型車両が二人の間を通過する。
+
+車両が去った後、小面はいない。
+
+感情銀行の窓辺に立つクラ。笑顔が消えている。
+
+「……見られたか」
+
+暗転。
+
+タイトル。
 
 # LOVED GUN
 
-## After Credits
+エンドクレジット後。
 
-In a dark room, the masked figure raises a hand to the Ko-omote mask but cannot remove it. A fine crack appears near one eye. A single tear falls through the gap.
+薄暗い和室。壁に複数の能面が並ぶ。
 
-A quiet voice says, “Yo.”
+小面が一人で座っている。面へ手をかけ、外そうとする。しかし指が止まる。
 
-Black.
+白い面に細い亀裂が入る。
+
+面の隙間から、一滴の涙。
+
+「……陽くん」
+
+暗転。
