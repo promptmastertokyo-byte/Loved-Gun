@@ -16,9 +16,12 @@ Usage:
     python comfyui_batch_driver.py --only CUT116-CUT131   # single scene test
 """
 
+from __future__ import annotations  # keeps `str | None` annotations valid on Python < 3.10
+
 import argparse
 import csv
 import json
+import re
 import time
 import urllib.request
 from pathlib import Path
@@ -57,12 +60,32 @@ def load_manifest(csv_path: Path):
 
 
 def characters_for_row(row) -> list:
+    """
+    Detect which known characters appear in this row's free-text `characters`
+    field, e.g. 'クラ（紫シャツ、雑誌）、陽（濡れた制服）' or '陽の足元のみ
+    （シルエット、顔は見せない）'.
+
+    This field is prose, not a clean delimited list -- names are routinely
+    followed directly by parenthetical stage directions or possessive
+    suffixes (陽の手, 陽（後ろ姿）) with no separator before the next name.
+    Splitting on '、' and requiring an exact-token match therefore misses
+    ~1 in 4 rows (e.g. 'クラ（紫シャツ、雑誌）、陽（濡れた制服）' splits into
+    'クラ（紫シャツ', '雑誌）', '陽（濡れた制服）' -- none of which equal
+    'クラ' or '陽'). Use substring containment instead, with a targeted
+    exclusion for 'クラ' being a false-positive prefix of 'クラスメイト'
+    (classmates) -- the one confounding case that occurs in this manifest.
+    """
     raw = row["characters"]
     if not raw or raw.strip() in ("なし", "none", ""):
         return []
-    # Character field may list multiple names separated by '、' or '/'
-    names = [n.strip() for n in raw.replace("/", "、").split("、") if n.strip()]
-    return [n for n in names if n in CONFIG["lora_by_character"]]
+    matched = []
+    for name in CONFIG["lora_by_character"]:
+        if name == "クラ":
+            if re.search(r"クラ(?!ス)", raw):
+                matched.append(name)
+        elif name in raw:
+            matched.append(name)
+    return matched
 
 
 def build_workflow(row, pose_image_path: str | None) -> dict:
