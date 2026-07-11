@@ -7,11 +7,26 @@
 - Color Keyframe Guide
 - A-rank layout and color-keyframe production workflow
 - Scene 03 visual standard for the Emotion Bank
+- Feature-film layout language
+- Standard lens rules: 35mm / 50mm / 85mm
+- Scene 10 delayed-shadow staging rule
+- Seedance layout-preservation rules
+
+### Improved
+- Master A-Rank Layout Guide updated to v1.1
+- Environment-first composition formalized
+- TV-anime close framing restricted unless emotionally required
+- Static-camera-first policy clarified
+- Slow dolly / truck / push-in / pan defined as the only preferred camera movements
+- Scene 10 wide 50mm layout adopted as the official emotional-collapse master shot
+- Camera-stop → hold → delayed-shadow movement timing fixed
+- Production goal clarified: theatrical animation, not AI-generated-looking animation
 
 ### Production Direction
 - Create approximately 30 master A-rank layouts first
 - Preserve camera, perspective, character placement and negative space during colorization
 - Use approved color keyframes as Seedance Image-to-Video inputs
+- Seedance must animate performance without redesigning the approved layout
 - Expand to B/C-rank shots only after representative video tests
 
 ### Milestone
