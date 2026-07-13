@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image, { getImageProps } from "next/image";
 import { ArrowDown, ArrowRight, Film, Play, Quote, Volume2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FaqAccordion } from "@/components/ui/accordion";
@@ -16,10 +16,32 @@ const scenes = [
 
 const faqs = [
   { question: "『LOVED GUN』はどんな作品ですか？", answer: "亡くした恋人を忘れるための銃を渡された高校生・陽が、その銃口を自分自身の悲しみへ向け、痛みを抱えたまま生きることを選ぶ物語です。" },
-  { question: "本編の上映時間と形式は？", answer: "上映時間9分の、2D短編アニメーション映画です。" },
+  { question: "本編の上映時間と形式は？", answer: "約10分の2D短編アニメーション映画です。" },
   { question: "ラブドガンとは何ですか？", answer: "人を撃つための銃ではありません。持ち主が見ないようにしている感情を撃ち抜き、向き合うための古い拳銃です。" },
   { question: "舞台や設定は実在しますか？", answer: "舞台は現代日本のどこかにある架空の地方都市です。地名、「感情銀行」、ラブドガン、登場人物、出来事はすべて創作です。" },
 ];
+
+const heroImageCommon = {
+  alt: "青空の学校屋上で離れて座る陽と栞",
+  width: 1672,
+  height: 941,
+  sizes: "100vw",
+  loading: "eager" as const,
+};
+
+const {
+  props: { srcSet: heroDesktopSrcSet },
+} = getImageProps({
+  ...heroImageCommon,
+  src: "/images/key-visual.png",
+});
+
+const {
+  props: { srcSet: heroMobileSrcSet, ...heroImageProps },
+} = getImageProps({
+  ...heroImageCommon,
+  src: "/images/key-visual-clean.png",
+});
 
 export default function Home() {
   return (
@@ -35,8 +57,11 @@ export default function Home() {
       </header>
 
       <section className="hero" id="top" aria-label="キービジュアル">
-        <Image src="/images/key-visual.png" alt="青空の学校屋上で離れて座る陽と栞、LOVED GUN キービジュアル" fill priority sizes="100vw" className="hero-image hero-image--desktop" />
-        <Image src="/images/key-visual-clean.png" alt="青空の学校屋上で離れて座る陽と栞" fill priority sizes="(max-width: 900px) 100vw, 1px" className="hero-image hero-image--mobile" />
+        <picture className="hero-picture">
+          <source media="(min-width: 901px)" srcSet={heroDesktopSrcSet} />
+          <source media="(max-width: 900px)" srcSet={heroMobileSrcSet} />
+          <img {...heroImageProps} className="hero-image" fetchPriority="high" />
+        </picture>
         <div className="hero-shade" />
         <div className="hero-copy">
           <p className="eyebrow light">AN ORIGINAL ANIMATION PROJECT</p>
@@ -56,7 +81,7 @@ export default function Home() {
           <p>痛みから逃れるのではなく、抱えたまま生きる。<br />それは、忘れずに前へ進むための選択だった。</p>
         </div>
         <aside className="format-card">
-          <span>RUNTIME</span><strong>9</strong><em>MIN.</em>
+          <span>RUNTIME</span><strong>10</strong><em>MIN. (APPROX.)</em>
           <dl><div><dt>STYLE</dt><dd>2D ANIMATION</dd></div><div><dt>FORMAT</dt><dd>SHORT FILM</dd></div></dl>
         </aside>
       </section>
@@ -132,7 +157,7 @@ export default function Home() {
 
       <section className="production section">
         <div className="production-copy"><p className="eyebrow">PROJECT NOTES</p><h2>悲しみは消えなくても、<br />抱えたまま歩ける。</h2><p>喪失を受け入れる勇気。忘れることと前へ進むことの違い。細い雨、半拍遅れて動く影、黒い粒子、雨上がりの光を通して、言葉になる前の感情を描く短編作品です。</p></div>
-        <div className="production-stats"><div><strong>9</strong><span>MINUTE SHORT FILM</span></div><div><strong>2D</strong><span>ANIMATION</span></div><div><strong>JP</strong><span>FICTIONAL CITY</span></div></div>
+        <div className="production-stats"><div><strong>10</strong><span>MINUTE SHORT FILM (APPROX.)</span></div><div><strong>2D</strong><span>ANIMATION</span></div><div><strong>JP</strong><span>FICTIONAL CITY</span></div></div>
       </section>
 
       <section className="faq section"><div><p className="eyebrow">QUESTIONS & ANSWERS</p><h2>作品について</h2></div><FaqAccordion items={faqs} /></section>
