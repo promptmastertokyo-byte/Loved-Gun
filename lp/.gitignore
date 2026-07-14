@@ -4,6 +4,10 @@ node_modules/
 # Next.js build output
 .next/
 out/
+dist/
+.wrangler/
+!build/
+!build/sites-vite-plugin.ts
 
 # local environment
 .env

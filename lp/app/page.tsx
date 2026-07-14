@@ -1,4 +1,4 @@
-import Image, { getImageProps } from "next/image";
+import Image from "next/image";
 import { ArrowDown, ArrowRight, Film, Play, Quote, Volume2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FaqAccordion } from "@/components/ui/accordion";
@@ -21,28 +21,6 @@ const faqs = [
   { question: "舞台や設定は実在しますか？", answer: "舞台は現代日本のどこかにある架空の地方都市です。地名、「感情銀行」、ラブドガン、登場人物、出来事はすべて創作です。" },
 ];
 
-const heroImageCommon = {
-  alt: "青空の学校屋上で離れて座る陽と栞、LOVED GUN キービジュアル",
-  width: 1672,
-  height: 941,
-  sizes: "100vw",
-  loading: "eager" as const,
-};
-
-const {
-  props: { srcSet: heroDesktopSrcSet },
-} = getImageProps({
-  ...heroImageCommon,
-  src: "/images/key-visual.png",
-});
-
-const {
-  props: { srcSet: heroMobileSrcSet, ...heroImageProps },
-} = getImageProps({
-  ...heroImageCommon,
-  src: "/images/key-visual-clean.png",
-});
-
 export default function Home() {
   return (
     <main>
@@ -58,9 +36,17 @@ export default function Home() {
 
       <section className="hero" id="top" aria-label="キービジュアル">
         <picture className="hero-picture">
-          <source media="(min-width: 901px)" srcSet={heroDesktopSrcSet} />
-          <source media="(max-width: 900px)" srcSet={heroMobileSrcSet} />
-          <img {...heroImageProps} className="hero-image" fetchPriority="high" />
+          <source media="(min-width: 901px)" srcSet="/images/key-visual.png" />
+          <source media="(max-width: 900px)" srcSet="/images/key-visual-clean.png" />
+          <img
+            src="/images/key-visual-clean.png"
+            alt="青空の学校屋上で離れて座る陽と栞、LOVED GUN キービジュアル"
+            width={1672}
+            height={941}
+            className="hero-image"
+            loading="eager"
+            fetchPriority="high"
+          />
         </picture>
         <div className="hero-shade" />
         <div className="hero-copy">
