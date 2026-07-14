@@ -22,7 +22,7 @@ const faqs = [
 ];
 
 const heroImageCommon = {
-  alt: "青空の学校屋上で離れて座る陽と栞",
+  alt: "青空の学校屋上で離れて座る陽と栞、LOVED GUN キービジュアル",
   width: 1672,
   height: 941,
   sizes: "100vw",
