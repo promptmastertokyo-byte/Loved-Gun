@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## 2026-07-15
+
+### Added
+- Final short-film scenario entry point
+- 54-cut short-film shot list with a 10-minute planning total
+- 54 Image-to-Video prompts for Seedance and ComfyUI workflows
+- Editable short-film project deck
+
+### Organized
+- Made the final short-film files the primary links in the repository README
+- Marked the 20-minute, 216-cut storyboard as legacy reference material
+- Updated screenplay, storyboard, and project-status navigation
+- Excluded generated presentation inspection sidecars from Git tracking
+
 ## 2026-07-12
 
 ### Added

@@ -2,64 +2,51 @@
 
 ## Goal
 
-約20分の短編アニメーション映画を、総予算1,000万円想定で企画・制作し、映画祭出品とシリーズ展開の足掛かりにする。
+約10分を目安とした2D短編アニメーション映画を完成させる。尺はアニマティック後に確定する。
 
 ## Phase 1 — Development
 
-- Project Bible
-- Public World Bible
-- Character Bible
-- Beat Sheet
-- Treatment
-- Screenplay Draft 1
-- Screenplay Final
+- [x] 最終ログライン・あらすじ
+- [x] 最終シナリオ
+- [x] 54カットのショットリスト
+- [x] 54カットのImage-to-Videoプロンプト
+- [x] LP・ポスター・企画スライド
 
 ## Phase 2 — Pre-production
 
-- キャラクターデザイン
-- プロップデザイン
-- 美術設定
-- 色彩設計
-- 絵コンテ
-- レイアウト
-- 音響設計
-- キャスティング
-- 制作スケジュール確定
+- [ ] キャラクター最終デザイン
+- [ ] ラブドガンのプロップ最終デザイン
+- [ ] 背景美術・色彩設計
+- [ ] CUT001–054の絵コンテ／キーフレーム
+- [ ] アニマティックと上映時間の確定
+- [ ] ショート版音響設計
+- [ ] 制作スケジュール・予算
 
 ## Phase 3 — Production
 
-- 原画
-- 第二原画
-- 動画
-- 仕上げ
-- 背景
-- 撮影
-- 3D／特殊効果
-- 編集
+- [ ] レイアウト・原画
+- [ ] Image-to-Video／作画補助生成
+- [ ] 顔・手・線画の修正
+- [ ] 背景・仕上げ・撮影
+- [ ] カット編集
 
 ## Phase 4 — Post-production
 
-- アフレコ
-- 効果音
-- 劇伴
-- MA
-- カラー調整
-- 字幕
-- マスター書き出し
+- [ ] 音声収録
+- [ ] 効果音・劇伴
+- [ ] MA
+- [ ] 色調整
+- [ ] 字幕
+- [ ] 高画質マスター書き出し
 
 ## Phase 5 — Release
 
-- ポスター
-- ティザー
-- 予告編
-- ピッチデック
-- 映画祭応募
-- 制作会社・出版社・出資候補への提案
+- [x] LP・ポスター・ティザー素材の初稿
+- [ ] 完成予告編
+- [ ] 映画祭応募資料
+- [ ] 限定試写
+- [ ] 公開マスター
 
-## Current Priority
+## Legacy
 
-1. Short Film Treatment
-2. 20-minute Screenplay Draft 1
-3. Production assumptions for a 10M JPY budget
-4. Storyboard and cut-count test
-5. Pitch package
+旧20分・216カット版は企画履歴として保持するが、このロードマップの制作対象には含めない。
