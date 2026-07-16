@@ -1,5 +1,7 @@
 # LOVED GUN — 10,000,000 JPY BUDGET ASSUMPTIONS
 
+> **ARCHIVED / NOT CURRENT** これは旧18〜20分版・税込1,000万円想定の履歴資料。最終ショート版では使用しない。現行予算は `budget/SHORT_FILM_BUDGET_9M_EX_TAX.md` を正とする。
+
 ## Purpose
 
 This document defines the creative and production assumptions required to keep the short film near a total production budget of JPY 10,000,000.

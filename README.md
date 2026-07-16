@@ -15,6 +15,8 @@
 - 小面／ノウメン：最終ショート版には登場しない
 - 正式シナリオ：[`screenplay/SHORT_FILM_SCENARIO_FINAL.md`](./screenplay/SHORT_FILM_SCENARIO_FINAL.md)
 - 正式カット割り：[`storyboard/short-film/SHOTLIST.md`](./storyboard/short-film/SHOTLIST.md)
+- 制作正典：[`storyboard/short-film/SOURCE_OF_TRUTH.md`](./storyboard/short-film/SOURCE_OF_TRUTH.md)
+- 予算：900万円（税別）／税込総額990万円
 
 ## ログライン
 
@@ -31,7 +33,9 @@
 ### 絵コンテ・動画生成
 
 - [ショート版カット割り（全54カット）](./storyboard/short-film/SHOTLIST.md)
-- [ショート版Image-to-Videoプロンプト（全54本）](./storyboard/short-film/PROMPTS.md)
+- [ショート版Image-to-Videoプロンプト（54制作番号・55生成クリップ）](./storyboard/short-film/PROMPTS.md)
+- [S/P/V割当と生成区間](./storyboard/short-film/SPV_ASSIGNMENT.md)
+- [カット体系対応表](./storyboard/short-film/CANONICAL_MAPPING.md)
 - [絵コンテフォルダ案内](./storyboard/README.md)
 
 ### 企画・公開素材
@@ -47,6 +51,7 @@
 - [現在の制作状況](./project/PROJECT_STATUS.md)
 - [次の作業](./project/NEXT_ACTIONS.md)
 - [変更履歴](./CHANGELOG.md)
+- [短編版正式予算](./budget/SHORT_FILM_BUDGET_9M_EX_TAX.md)
 
 ## ディレクトリ
 

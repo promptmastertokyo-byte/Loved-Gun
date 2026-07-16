@@ -2,20 +2,42 @@
 
 - 対象：`storyboard/short-film/SHOTLIST.md`
 - 用途：Seedance / ComfyUI Image-to-Video / 同等の動画生成モデル
-全54カット。各プロンプトは承認済みキーフレームを初期画像として使用する。
+全54制作番号（CUT045のみa/bの2生成クリップ）。各プロンプトは承認済みキーフレームを初期画像として使用する。
 
 ## Canonical identifiers
 
-- **Hinata**: slender 17-year-old Japanese schoolboy, messy medium black hair, pale skin, dark navy school blazer over a white shirt, slightly slouched posture
-- **Shiori**: slender 17-year-old Japanese schoolgirl, long straight black hair, matching navy school uniform, gentle reserved smile
-- **Kura**: 29-year-old Japanese man, long wavy dark-purple hair partly covering one eye, purple pinstripe shirt, dark tie, black vest, single dark earring
+- **Hinata**: slender 17-year-old Japanese schoolboy, short softly tousled hair with a light visual mass in the approved monochrome boards, pale skin, school blazer layered over a hooded sweatshirt, straight school trousers, simple sneakers, rounded school backpack, slightly slouched posture
+- **Shiori**: slender 17-year-old Japanese schoolgirl, long straight hair with full bangs, school blazer and pleated skirt with a small neck ribbon, gentle reserved smile
+- **Kura**: 29-year-old Japanese man, long wavy hair gathered loosely at the back with face-framing strands, clean-shaven face, tailored three-piece suit with shirt and tie, composed upright posture; no visible earring or pinstripe pattern unless present in the approved board
 - **Shadow**: faceless matte-black humanoid silhouette matching Hinata's exact proportions, moving half a beat late
-- **Loved Gun**: old black revolver with a subtle iridescent blue-violet cylinder, dark wood grip, small engraved words “LOVED GUN”; no muzzle flash, bullet, wound, or blood
-- **Style**: cinematic Japanese 2D anime, delicate pencil-like linework, restrained cel shading, cool desaturated reality, warm amber bank interior, orange memory light, subtle film grain, 16:9 widescreen
+- **Loved Gun**: old compact dark-metal revolver, matte cylinder, dark wood grip, restrained ornament, small engraved words “LOVED GUN”; do not add iridescent color, silver filigree, floral decoration, muzzle flash, bullet, wound, or blood unless an approved prop sheet explicitly overrides this line
+- **Style**: cinematic Japanese 2D anime, clean monochrome pencil layout-board linework as the visual source of truth, restrained cel shading only after color approval, soft high-key gray reality, subtle warm/cool separation by scene, 16:9 widescreen
+
+Board reference for these identifiers: `lp/public/images/characters/you.png`, `lp/public/images/characters/kura.png`, `lp/public/images/scenes/scene-09.png`, and `lp/public/images/scenes/scene-31.png`. When prose conflicts with those approved images, the images win.
 
 ## Global negative prompt
 
-No Koomote, no Noh mask, no masked person, no extra protagonist, no photorealism, no 3D render, no exaggerated facial distortion, no costume change, no text overlay, no subtitle, no watermark, no logo, no handheld shake, no fast zoom, no gore, no blood, no conventional gunshot, no muzzle flash.
+No Koomote, no Noh mask, no masked person, no extra protagonist, no photorealism, no 3D render, no exaggerated facial distortion, no costume change, no text overlay, no subtitle, no watermark, no logo, no handheld shake, no fast zoom, no gore, no blood, no conventional gunshot, no muzzle flash, no weapon aimed at a body, no self-harm composition.
+
+## Generation windows for cuts longer than 10 seconds
+
+Seedance / I2Vの1生成は5〜10秒を上限目安とする。下表の「生成」区間だけを動画生成し、残りは承認済み終端フレームのホールド、雨・光・粒子の撮影処理、音の余韻で延長する。2本目の生成を足して芝居を増やさない。
+
+| CUT | 本尺 | 生成区間 | 延長区間 |
+|---|---:|---:|---:|
+| CUT014–016 | 12s | 0–8s | 8–12s：終端ホールド＋環境光 |
+| CUT017–019 | 13s | 0–8s | 8–13s：終端ホールド＋音の余韻 |
+| CUT020–025 | 12s | 0–8s | 8–12s：終端ホールド＋微細な光／風 |
+| CUT026 | 13s | 0–8s | 8–13s：反動後ホールド＋低音余韻 |
+| CUT027–030 | 11s | 0–7s | 7–11s：終端ホールド＋影の微細脈動 |
+| CUT031–033 | 12s | 0–8s | 8–12s：終端ホールド＋粒子／無音 |
+| CUT034–035 | 11s | 0–7s | 7–11s：終端ホールド＋呼吸／間 |
+| CUT036–041 | 12s | 0–8s | 8–12s：終端ホールド＋風／室内音 |
+| CUT042–044 | 13s | 0–8s | 8–13s：終端ホールド＋無音 |
+| CUT046 | 14s | 0–8s | 8–14s：無傷の陽をホールド＋粒子撮影 |
+| CUT047–051 | 11s | 0–7s | 7–11s：終端ホールド＋粒子／呼吸／間 |
+
+CUT045a（6s）とCUT045b（7s）は別々に1回ずつ生成し、編集点で接続する。
 
 ## Scene 01 — 雨の交差点
 
@@ -25,7 +47,7 @@ Fixed wide establishing shot of a modern Japanese city beneath a flat gray morni
 
 ### CUT002
 
-Fixed long shot across a rain-soaked pedestrian crossing. A slender 17-year-old Japanese schoolboy with messy medium black hair and a dark navy school blazer stands still near center while umbrella silhouettes flow around him. Keep his body and camera locked; animate only the crowd sliding past, rain streaks, and slight fabric movement. Cool desaturated palette, isolated mood.
+Fixed long shot across a rain-soaked pedestrian crossing. Hinata, matching the approved board with short softly tousled hair, a school blazer over a hooded sweatshirt, and a rounded backpack, stands still near center while umbrella silhouettes flow around him. Keep his body and camera locked; animate only the crowd sliding past, rain streaks, and slight fabric movement. Cool desaturated palette, isolated mood.
 
 ### CUT003
 
@@ -33,7 +55,7 @@ Extreme close-up of the boy's pale hand holding a faded photograph of a smiling 
 
 ### CUT004
 
-Fixed medium shot at the crossing. The pedestrian signal changes from red to green; surrounding commuters begin moving while the slender black-haired schoolboy waits half a beat, then takes one restrained step. Keep background perspective and character identity unchanged. Animate only the signal change, one step, passing silhouettes, and light rain. No pan or zoom.
+Fixed medium shot at the crossing. The pedestrian signal changes from red to green; surrounding commuters begin moving while Hinata waits half a beat, then takes one restrained step. Keep his approved short tousled hair, layered hoodie-and-blazer silhouette, background perspective, and character identity unchanged. Animate only the signal change, one step, passing silhouettes, and light rain. No pan or zoom.
 
 ### CUT005
 
@@ -45,13 +67,13 @@ Fixed low shot of the same shoes and faceless matte-black shadow. The boy steps 
 
 ### CUT007
 
-Tight close-up of the black-haired schoolboy looking upward, then a locked insert of a streetlamp above him. Preserve facial proportions and wet hair. Animate only his eyes lifting, a small breath, the lamp flickering twice, and a restrained burst of glass fragments falling downward. No explosion, no camera shake, no dramatic zoom.
+Tight close-up of Hinata looking upward, then a locked insert of a streetlamp above him. Preserve the approved facial proportions and short tousled wet hair. Animate only his eyes lifting, a small breath, the lamp flickering twice, and a restrained burst of glass fragments falling downward. No explosion, no camera shake, no dramatic zoom.
 
 ## Scene 02 — 路地〜感情銀行
 
 ### CUT008
 
-Fixed rear wide shot in a narrow wet alley. The slender schoolboy in a dark navy blazer walks quickly away from camera without running, shoulders slightly hunched. Keep architecture and vanishing point locked. Animate only measured footsteps, coat hem, rain, and puddle ripples. Cool blue-gray morning light, quiet urgency, no other featured character.
+Fixed rear wide shot in a narrow wet alley. Hinata, in the approved hooded sweatshirt under a school blazer with a rounded backpack, walks quickly away from camera without running, shoulders slightly hunched. Keep architecture and vanishing point locked. Animate only measured footsteps, blazer hem, rain, and puddle ripples. Cool blue-gray morning light, quiet urgency, no other featured character.
 
 ### CUT009
 
@@ -59,7 +81,7 @@ Locked close-up of an old wooden shop sign reading 感情銀行 on the approved 
 
 ### CUT010
 
-Fixed long shot across the alley. The black-haired schoolboy stands at the far left third, staring toward the old Emotion Bank facade on the right. Maintain at least forty percent empty look space. Animate only thin rain, his breathing, and a small movement of wet bangs. No walking, no camera movement, no passersby reacting.
+Fixed long shot across the alley. Hinata, matching the approved board silhouette, stands at the far left third, staring toward the old Emotion Bank facade on the right. Maintain at least forty percent empty look space. Animate only thin rain, his breathing, and a small movement of wet bangs. No walking, no camera movement, no passersby reacting.
 
 ### CUT011
 
@@ -71,25 +93,25 @@ Fixed frontal shot of the old door opening inward. A narrow wedge of warm amber 
 
 ### CUT013
 
-Locked interior wide shot looking toward the entrance. The slender black-haired schoolboy crosses the threshold and pauses as the door closes behind him. Warm amber brass lighting replaces the cold rain palette. Animate only two steps, the closing door, a slight bell sway, and rain disappearing from the soundtrack impression. No camera motion.
+Locked interior wide shot looking toward the entrance. Hinata, with the approved short tousled hair, layered hoodie-and-blazer silhouette, and backpack, crosses the threshold and pauses as the door closes behind him. Warm amber brass lighting replaces the cold rain palette. Animate only two steps, the closing door, a slight bell sway, and rain disappearing from the soundtrack impression. No camera motion.
 
 ## Scene 03 — クラとラブドガン
 
 ### CUT014
 
-Fixed medium shot of Kura, a 29-year-old Japanese man with long wavy dark-purple hair partly covering one eye, purple pinstripe shirt, dark tie, black vest, and single dark earring. He closes an old book and raises his eyes toward the entrance. Animate only the book closing, eyes lifting, and subtle hair settling. Warm amber interior.
+Fixed medium shot of Kura, a 29-year-old Japanese man matching the approved board: long wavy hair loosely gathered at the back, face-framing strands, clean-shaven face, tailored three-piece suit, shirt, and tie. He closes an old book and raises his eyes toward the entrance. Animate only the book closing, eyes lifting, and subtle hair settling. Warm amber interior.
 
 ### CUT015
 
-Over-the-shoulder shot from behind Kura toward the slender black-haired schoolboy. Hinata remains silent and shifts only his eyes toward a glass display case. Keep the 180-degree axis, background shelves, and character positions locked. Animate only the eye movement, a shallow breath, and a faint lamp flicker. No camera movement.
+Over-the-shoulder shot from behind Kura toward Hinata in his approved hoodie-and-blazer silhouette. Hinata remains silent and shifts only his eyes toward a glass display case. Keep the 180-degree axis, background shelves, and character positions locked. Animate only the eye movement, a shallow breath, and a faint lamp flicker. No camera movement.
 
 ### CUT016
 
-Locked prop close-up inside a glass case: an old black revolver with an iridescent blue-violet cylinder, dark wood grip, and small engraved words LOVED GUN already present. Preserve the weapon design exactly. Animate only a restrained color drift inside the cylinder and one warm reflection moving across the glass. No hand, no muzzle flash.
+Locked prop close-up inside a glass case: the approved compact dark-metal revolver with a matte cylinder, dark wood grip, restrained ornament, and small engraved words LOVED GUN already present. Preserve the prop-board design exactly. Animate only one warm reflection moving across the glass. Do not introduce iridescent color, a hand, or muzzle flash.
 
 ### CUT017
 
-Extreme close-up of Kura's ringed hand turning a small key and opening the glass case. Keep the Loved Gun, engraved lettering, and hand anatomy stable. Animate only the key rotation, latch release, and a narrow iridescent shimmer across the cylinder. Warm brass light, controlled movement, no camera motion.
+Extreme close-up of Kura's hand turning a small key and opening the glass case. Keep the Loved Gun, engraved lettering, matte cylinder, and hand anatomy stable. Animate only the key rotation, latch release, and a narrow warm reflection across the metal. Warm brass light, controlled movement, no camera motion.
 
 ### CUT018
 
@@ -97,7 +119,7 @@ Locked medium two-shot across the counter with Hinata on screen left and Kura on
 
 ### CUT019
 
-Tight close-up of Kura's calm face, dark-purple hair partly covering one eye. His gaze briefly drops toward the photograph edge in Hinata's chest pocket, then returns without smiling. Animate only the eye shift and minimal mouth movement for the final line. Keep lighting, framing, and expression restrained; hold still after speaking.
+Tight close-up of Kura's calm face, long wavy hair loosely gathered with face-framing strands. His gaze briefly drops toward the photograph edge in Hinata's chest pocket, then returns without smiling. Animate only the eye shift and minimal mouth movement for the final line. Keep lighting, framing, and expression restrained; hold still after speaking.
 
 ## Scene 04 — 処置と最初の一発
 
@@ -115,15 +137,15 @@ Locked close-up of Kura offering the Loved Gun while Hinata's hand remains suspe
 
 ### CUT023
 
-Fixed side medium shot. The slender black-haired schoolboy finally accepts the old revolver and raises it toward a blank white wall while keeping his finger outside the trigger. Kura watches from a safe angle. Animate only the controlled arm lift, slight sleeve movement, and restrained mouth movement for one warning line. No zoom.
+Fixed side medium shot. Hinata, preserving the approved short-hair and layered schoolwear design, finally accepts the old revolver and raises it toward a blank white wall while keeping his finger outside the trigger. Kura watches from a safe angle. Animate only the controlled arm lift, slight sleeve movement, and restrained mouth movement for one warning line. No zoom.
 
 ### CUT024
 
-Memory insert, locked extreme close-up of Shiori's slender fingers tapping a rooftop chain-link fence twice. She wears a navy school uniform; orange evening backlight outlines her hand. Animate only two small fingertip taps, one strand of long black hair crossing frame, and gentle wind in the fence. Soft film grain, no camera motion.
+Memory insert, locked extreme close-up of Shiori's slender fingers tapping a rooftop chain-link fence twice. Preserve the approved school blazer, pleated skirt, and small neck-ribbon design; orange evening backlight outlines her hand. Animate only two small fingertip taps, one strand of long straight hair crossing frame, and gentle wind in the fence. Soft film grain, no camera motion.
 
 ### CUT025
 
-Fixed wide rooftop memory at sunset. Shiori, a slender 17-year-old Japanese schoolgirl with long straight black hair in a navy uniform, stands near the fence; Hinata sits several steps away. Preserve distance and negative space. Animate only Shiori's hair in wind, her minimal mouth movement, and slowly drifting clouds. Warm orange light.
+Fixed wide rooftop memory at sunset. Shiori, matching the approved board with long straight hair, full bangs, school blazer, pleated skirt, and a small neck ribbon, stands near the fence; Hinata sits several steps away. Preserve distance and negative space. Animate only Shiori's hair in wind, her minimal mouth movement, and slowly drifting clouds. Warm orange light.
 
 ### CUT026
 
@@ -163,11 +185,11 @@ Locked side wide shot. The shadow lunges one arm toward Kura; Kura takes only ha
 
 ### CUT034
 
-Tight fixed close-up of Hinata staring at both pale hands, the hands that fired the weapon. His messy black hair hangs slightly forward and his shoulders tremble once. Animate only a small tremor, breath, and eye focus shifting from one palm to the other. Cool white-room light, no camera movement, no tears yet.
+Tight fixed close-up of Hinata staring at both pale hands, the hands that held the weapon. His approved short tousled hair hangs slightly forward and his shoulders tremble once. Animate only a small tremor, breath, and eye focus shifting from one palm to the other. Cool white-room light, no camera movement, no tears yet.
 
 ### CUT035
 
-Fixed medium shot of Kura with dark-purple wavy hair and purple pinstripe shirt, still in a guarded stance. He slowly relaxes his arms and speaks without smiling. Animate only the arms lowering, restrained mouth movement, and one downward eye shift. Warm edge light against the white room, no camera motion.
+Fixed medium shot of Kura with long wavy hair loosely gathered at the back and his approved tailored three-piece suit, still in a guarded stance. He slowly relaxes his arms and speaks without smiling. Animate only the arms lowering, restrained mouth movement, and one downward eye shift. Warm edge light against the white room, no camera motion.
 
 ### CUT036
 
@@ -179,7 +201,7 @@ Fixed side two-shot at floor level, Hinata and the faceless shadow in profile. H
 
 ### CUT038
 
-Rooftop memory, fixed medium two-shot at orange sunset. Shiori with long straight black hair leans against the fence; Hinata sits apart in the matching navy uniform. Animate only hair and blazer hems in wind, restrained mouth movement for their exchange, and soft cloud drift. Maintain gentle distance and the 180-degree axis.
+Rooftop memory, fixed medium two-shot at orange sunset. Shiori with long straight hair and full bangs leans against the fence; Hinata sits apart in the approved schoolwear. Animate only hair and blazer hems in wind, restrained mouth movement for their exchange, and soft cloud drift. Maintain gentle distance and the 180-degree axis.
 
 ### CUT039
 
@@ -197,7 +219,7 @@ Locked close-up of Kura loading one final thin black light into the Loved Gun, t
 
 ### CUT042
 
-Fixed close-up of Hinata accepting the Loved Gun with a steady hand. He is a slender 17-year-old Japanese schoolboy with messy medium black hair and a dark navy blazer. Animate only his fingers closing around the grip, one calm breath, and a slight lift of his eyes. No tremor, no zoom.
+Fixed close-up of Hinata accepting the Loved Gun with a steady hand. Preserve his approved short tousled hair and layered hooded-sweatshirt-under-blazer design. Animate only his fingers closing around the grip, one calm breath, and a slight lift of his eyes. No tremor, no zoom.
 
 ### CUT043
 
@@ -207,13 +229,23 @@ Locked wide shot of the white room. The faceless shadow slowly reshapes into Shi
 
 Fixed medium shot. Hinata cannot pull the trigger and slowly lowers the gun. Shiori's form returns to the faceless matte-black silhouette, which raises one hand and points quietly toward Hinata's chest. Animate only the gun lowering, reverse transformation, and single pointing gesture. No camera motion, no melodramatic expression.
 
-### CUT045
+### CUT045a
 
-Locked side close-up with Hinata in profile placing the Loved Gun against the outside of his blazer over his chest; Kura remains soft in the background. Animate only restrained mouth movement for the exchange, one breath, and Hinata's steady gaze. No threat framing, no finger twitch, no muzzle flash, no blood.
+Locked close-up of Kura alone in the white treatment room. He starts to extend one empty hand toward an action outside the frame, stops before reaching, then lowers his eyes. Animate only the incomplete hand movement, one restrained blink, and minimal mouth movement for the line “This will hurt.” Keep all action and Hinata outside the frame. No camera movement.
+
+Negative prompt for this clip: gun, weapon, revolver, second person in frame, Hinata in frame, hand holding an object, self-harm, threat pose, muzzle flash, wound, blood.
+
+### CUT045b
+
+Locked medium close-up of Hinata alone, framed from upper chest to head. Both hands and every prop remain below and outside the frame. He looks steadily ahead and speaks two quiet lines, “I won't forget” and “I'll live with you.” After the last word, hold on his unchanged face while one deep supernatural reaction sound occurs offscreen, followed by complete silence. No visible action or effect.
+
+Negative prompt for this clip: gun, weapon, revolver, second person in frame, Kura in frame, hands in frame, object in frame, self-harm, threat pose, muzzle flash, wound, blood.
 
 ### CUT046
 
-Fixed restrained wide shot. Hinata fires into his own chest through the Loved Gun's supernatural effect. His body stays upright and unharmed; only the attached shadow splits at chest level into soft black particles, expands once, then begins returning toward his feet. No blood, wound, fall, muzzle flash, bullet, smoke, or camera shake.
+Immediate cut to a fixed restrained wide shot after the offscreen sound. Hinata is already standing upright and visibly unharmed, with empty hands and no weapon anywhere in frame. The faceless shadow behind him ripples once at chest height, releases soft black particles, and begins settling toward his feet. Animate only the shadow ripple and particle descent. No reenactment of the preceding action.
+
+Negative prompt for this clip: gun, weapon, revolver, object in hand, aiming pose, trigger action, self-harm, impact on body, muzzle flash, bullet, smoke, wound, blood, fall, second person in frame.
 
 ## Scene 08 — 消えなかった悲しみ
 
@@ -223,7 +255,7 @@ Locked low close-up as scattered black particles drift slowly downward and reass
 
 ### CUT048
 
-Fixed tight close-up of Kura, dark-purple hair partly covering one eye. He does not smile; his gaze lowers while he waits for the answer. Animate only minimal mouth movement for one question, a slow blink, and eyes lowering. Warm side light, quiet compassion, stable face and camera.
+Fixed tight close-up of Kura, long wavy hair loosely gathered with face-framing strands. He does not smile; his gaze lowers while he waits for the answer. Animate only minimal mouth movement for one question, a slow blink, and eyes lowering. Warm side light, quiet compassion, stable face and camera.
 
 ### CUT049
 
