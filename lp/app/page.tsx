@@ -28,10 +28,13 @@ export default function Home() {
         <a className="wordmark" href="#top" aria-label="LOVED GUN トップへ">
           <span>LOVED GUN</span><small>ラブドガン</small>
         </a>
-        <nav aria-label="メインナビゲーション">
+        <nav className="desktop-nav" aria-label="メインナビゲーション">
           <a href="#story">Story</a><a href="#world">World</a><a href="#movie">Movie</a><a href="#gallery">Gallery</a>
         </nav>
         <Button asChild variant="outline" className="header-cta"><a href="#movie"><Play size={14} fill="currentColor" />Trailer</a></Button>
+        <nav className="mobile-nav" aria-label="モバイルナビゲーション">
+          <a href="#story">Story</a><a href="#world">World</a><a href="#characters">Characters</a><a href="#gallery">Gallery</a><a href="#music">Music</a>
+        </nav>
       </header>
 
       <section className="hero" id="top" aria-label="キービジュアル">
