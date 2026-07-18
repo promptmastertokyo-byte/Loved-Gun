@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowDown, ArrowRight, Film, Play, Quote, Volume2 } from "lucide-react";
+import { ArrowDown, ArrowRight, Film, Music2, Play, Quote, Volume2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FaqAccordion } from "@/components/ui/accordion";
 
@@ -86,7 +86,7 @@ export default function Home() {
       <section className="story section" id="story">
         <div className="section-index"><span>02</span><b>STORY</b></div>
         <div className="story-grid">
-          <div className="story-title"><p className="eyebrow">THE GRIEF LEFT BEHIND</p><h2>雨の路地裏に、<br />古い銃が眠っている。</h2></div>
+          <div className="story-title"><p className="eyebrow">THE GRIEF LEFT BEHIND</p><h2><span>雨の路地裏に、</span><span>古い銃が</span><span>眠っている。</span></h2></div>
           <div className="story-body">
             <p>灰色の空に細い雨が降る朝。高校生の陽は、同級生だった栞を亡くしてから、色褪せた一枚の写真を胸ポケットにしまったまま歩いている。交差点で立ち止まった陽は、自分の足元の影がわずかに遅れて動くことに気づく。</p>
             <p>導かれるように迷い込んだ路地の奥、古い看板を掲げた店「感情銀行」。店主のクラは、壁のガラスケースに眠る古い拳銃「ラブドガン」を差し出す。人を撃つための銃ではない、見ないようにしているものを撃ち抜くための銃だと。</p>
@@ -141,6 +141,21 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="music-direction section" id="music">
+        <div className="section-index"><span>06</span><b>MUSIC DIRECTION</b></div>
+        <div className="music-heading">
+          <p className="eyebrow">IMAGINED MUSIC / SUNO AI</p>
+          <Music2 size={28} strokeWidth={1.25} />
+          <h2>雨上がりの光を、<br />音にする。</h2>
+          <p className="music-lead">『ラブドガン』の世界観をイメージし、SUNOで作曲。</p>
+        </div>
+        <div className="music-notes">
+          <article><span>01</span><div><h3>感情のカーブ</h3><p>喪失から受容へ向かう心の変化を、余白のある楽曲として設計。</p></div></article>
+          <article><span>02</span><div><h3>音色</h3><p>雨音、静かなピアノ、淡いストリングス。痛みの奥に残る温度を描く。</p></div></article>
+          <article><span>03</span><div><h3>リズム</h3><p>心拍のような低いパルスと、言葉や記憶を待つ広い余白。</p></div></article>
+        </div>
+      </section>
+
       <section className="production section">
         <div className="production-copy"><p className="eyebrow">PROJECT NOTES</p><h2>悲しみは消えなくても、<br />抱えたまま歩ける。</h2><p>喪失を受け入れる勇気。忘れることと前へ進むことの違い。細い雨、半拍遅れて動く影、黒い粒子、雨上がりの光を通して、言葉になる前の感情を描く短編作品です。</p></div>
         <div className="production-stats"><div><strong>10</strong><span>MINUTE SHORT FILM (APPROX.)</span></div><div><strong>2D</strong><span>ANIMATION</span></div><div><strong>JP</strong><span>FICTIONAL CITY</span></div></div>
@@ -153,7 +168,7 @@ export default function Home() {
         <div className="final-overlay" /><div className="final-copy"><Film size={28} /><p>忘れたいのは、君じゃなかった。</p><h2>LOVED GUN</h2><span>ラブドガン</span><Button asChild><a href="#movie"><Play size={16} fill="currentColor" />予告編をもう一度見る</a></Button></div>
       </section>
 
-      <footer><div className="footer-mark"><strong>LOVED GUN</strong><span>ラブドガン</span></div><div className="footer-links"><a href="#story">Story</a><a href="#world">World</a><a href="#movie">Movie</a><a href="#gallery">Gallery</a></div><p>Original Story / Screenplay / Project by damefuri<br />© 2026 LOVED GUN Project</p><a className="back-top" href="#top">BACK TO TOP <ArrowRight size={14} /></a></footer>
+      <footer><div className="footer-mark"><strong>LOVED GUN</strong><span>ラブドガン</span></div><div className="footer-links"><a href="#story">Story</a><a href="#world">World</a><a href="#movie">Movie</a><a href="#gallery">Gallery</a><a href="#music">Music</a></div><p>Original Story / Screenplay / Project / Final Direction by damefuri<br />© 2026 LOVED GUN Project</p><a className="back-top" href="#top">BACK TO TOP <ArrowRight size={14} /></a></footer>
     </main>
   );
 }
