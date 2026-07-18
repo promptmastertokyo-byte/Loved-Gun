@@ -31,7 +31,7 @@ export default function Home() {
         <nav aria-label="メインナビゲーション">
           <a href="#story">Story</a><a href="#world">World</a><a href="#movie">Movie</a><a href="#gallery">Gallery</a>
         </nav>
-        <Button asChild variant="outline" className="header-cta"><a href="#movie"><Play size={14} fill="currentColor" />予告編</a></Button>
+        <Button asChild variant="outline" className="header-cta"><a href="#movie"><Play size={14} fill="currentColor" />Trailer</a></Button>
       </header>
 
       <section className="hero" id="top" aria-label="キービジュアル">
@@ -53,7 +53,7 @@ export default function Home() {
           <p className="eyebrow light">AN ORIGINAL ANIMATION PROJECT</p>
           <h1>忘れたいのは、<br />君じゃなかった。</h1>
           <p className="hero-lead">亡くした恋人を忘れるための銃を渡された少年が、<br />悲しみを抱えたまま生きることを選ぶ。</p>
-          <Button asChild><a href="#movie"><Play size={16} fill="currentColor" />予告編を見る</a></Button>
+          <Button asChild><a href="#movie"><Play size={16} fill="currentColor" />Trailer</a></Button>
         </div>
         <a className="scroll-cue" href="#intro"><span>SCROLL</span><ArrowDown size={16} /></a>
       </section>
@@ -74,7 +74,7 @@ export default function Home() {
 
       <section className="movie section-dark" id="movie">
         <div className="movie-head">
-          <div><p className="eyebrow light">OFFICIAL PROMOTION VIDEO</p><h2>世界が、<br />一度だけ息を止める。</h2></div>
+          <div><p className="eyebrow light">OFFICIAL TRAILER</p><h2>世界が、<br />一度だけ息を止める。</h2></div>
           <p className="sound-note"><Volume2 size={17} />音声をオンにしてご覧ください</p>
         </div>
         <div className="video-frame">
@@ -165,7 +165,7 @@ export default function Home() {
 
       <section className="final-cta">
         <Image src="/images/scenes/scene-31.png" alt="屋上の陽と栞" fill sizes="100vw" />
-        <div className="final-overlay" /><div className="final-copy"><Film size={28} /><p>忘れたいのは、君じゃなかった。</p><h2>LOVED GUN</h2><span>ラブドガン</span><Button asChild><a href="#movie"><Play size={16} fill="currentColor" />予告編をもう一度見る</a></Button></div>
+        <div className="final-overlay" /><div className="final-copy"><Film size={28} /><p>忘れたいのは、君じゃなかった。</p><h2>LOVED GUN</h2><span>ラブドガン</span><Button asChild><a href="#movie"><Play size={16} fill="currentColor" />Trailer</a></Button></div>
       </section>
 
       <footer><div className="footer-mark"><strong>LOVED GUN</strong><span>ラブドガン</span></div><div className="footer-links"><a href="#story">Story</a><a href="#world">World</a><a href="#movie">Movie</a><a href="#gallery">Gallery</a><a href="#music">Music</a></div><p>Original Story / Screenplay / Project / Final Direction by damefuri<br />© 2026 LOVED GUN Project</p><a className="back-top" href="#top">BACK TO TOP <ArrowRight size={14} /></a></footer>
