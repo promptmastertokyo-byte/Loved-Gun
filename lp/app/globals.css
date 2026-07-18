@@ -159,7 +159,7 @@ footer { min-height:300px; padding:70px clamp(24px,7vw,120px); display:grid; gri
   footer { grid-template-columns:1fr 1fr; min-height:auto; }
 }
 @media (max-width:560px) {
-  .hero { min-height:92svh; background:#071e2b; }.hero-picture { inset:0 0 auto; height:52%; overflow:hidden; }.hero-image { object-position:center center; }.hero-shade { background:linear-gradient(0deg,#071e2b 0%,rgba(7,30,43,.96) 38%,rgba(7,30,43,.22) 62%,transparent 82%); }.hero-copy { width:calc(100% - 48px); }.hero-copy h1 { font-size:clamp(27px,8.5vw,34px); letter-spacing:.04em; }.hero-copy h1 span { white-space:nowrap; }.hero-lead { font-size:13px; }.mobile-only { display:block; }
+  .hero { min-height:max(92svh,664px); background:#071e2b; }.hero-picture { inset:0 0 auto; height:48%; overflow:hidden; }.hero-image { object-position:center center; }.hero-shade { background:linear-gradient(0deg,#071e2b 0%,rgba(7,30,43,.96) 38%,rgba(7,30,43,.22) 62%,transparent 82%); }.hero-copy { position:absolute; top:48%; left:24px; width:calc(100% - 48px); margin:0; padding-top:28px; }.hero-copy h1 { font-size:clamp(27px,8.5vw,34px); letter-spacing:.04em; }.hero-copy h1 span { white-space:nowrap; }.hero-lead { font-size:13px; }.mobile-only { display:block; }
   .intro h2,.story h2,.world h2,.music-direction h2,.production h2 { font-size:34px; }.format-card strong { font-size:90px; }
   .movie-head h2 { font-size:32px; }.sound-note { font-size:9px; }
   .quote-band { grid-template-columns:1fr; }.quote-band svg { display:none; }.quote-band span { grid-column:1; }.quote-band p { font-size:23px; }
