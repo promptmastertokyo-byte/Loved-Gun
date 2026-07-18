@@ -40,9 +40,9 @@ export default function Home() {
       <section className="hero" id="top" aria-label="キービジュアル">
         <picture className="hero-picture">
           <source media="(min-width: 901px)" srcSet="/images/key-visual.png" />
-          <source media="(max-width: 900px)" srcSet="/images/key-visual-clean.png" />
+          <source media="(max-width: 900px)" srcSet="/images/key-visual.png" />
           <img
-            src="/images/key-visual-clean.png"
+            src="/images/key-visual.png"
             alt="青空の学校屋上で離れて座る陽と栞、LOVED GUN キービジュアル"
             width={1672}
             height={941}
@@ -54,7 +54,7 @@ export default function Home() {
         <div className="hero-shade" />
         <div className="hero-copy">
           <p className="eyebrow light">AN ORIGINAL ANIMATION PROJECT</p>
-          <h1>忘れたいのは、<br />君じゃなかった。</h1>
+          <h1><span>忘れたいのは、</span><span>君じゃなかった。</span></h1>
           <p className="hero-lead">亡くした恋人を忘れるための銃を渡された少年が、<br />悲しみを抱えたまま生きることを選ぶ。</p>
           <Button asChild><a href="#movie"><Play size={16} fill="currentColor" />Trailer</a></Button>
         </div>

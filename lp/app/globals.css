@@ -30,6 +30,7 @@ button, a { -webkit-tap-highlight-color:transparent; }
 .eyebrow { margin:0 0 20px; color:#49738d; font-size:10px; font-weight:700; letter-spacing:.25em; }
 .eyebrow.light { color:rgba(255,255,255,.72); }
 .hero-copy h1 { margin:0 0 24px; font-family:var(--serif); font-size:clamp(38px,4.6vw,74px); font-weight:500; line-height:1.42; letter-spacing:.08em; text-shadow:0 4px 30px rgba(3,25,41,.25); }
+.hero-copy h1 span { display:block; }
 .hero-lead { margin:0 0 32px; font-family:var(--serif); font-size:15px; line-height:2; letter-spacing:.08em; }
 .scroll-cue { position:absolute; right:clamp(24px,4vw,70px); bottom:42px; z-index:2; display:flex; flex-direction:column; align-items:center; gap:10px; font-size:8px; letter-spacing:.3em; }
 .scroll-cue:after { content:""; width:1px; height:46px; background:rgba(255,255,255,.6); }
@@ -156,7 +157,7 @@ footer { min-height:300px; padding:70px clamp(24px,7vw,120px); display:grid; gri
   footer { grid-template-columns:1fr 1fr; min-height:auto; }
 }
 @media (max-width:560px) {
-  .hero { min-height:92svh; background:#071e2b; }.hero-picture { inset:0 0 auto; height:52%; overflow:hidden; }.hero-image { object-position:center center; }.hero-shade { background:linear-gradient(0deg,#071e2b 0%,rgba(7,30,43,.96) 38%,rgba(7,30,43,.22) 62%,transparent 82%); }.hero-copy { width:calc(100% - 48px); }.hero-copy h1 { font-size:34px; }.hero-lead { font-size:13px; }.mobile-only { display:block; }
+  .hero { min-height:92svh; background:#071e2b; }.hero-picture { inset:0 0 auto; height:52%; overflow:hidden; }.hero-image { object-position:center center; }.hero-shade { background:linear-gradient(0deg,#071e2b 0%,rgba(7,30,43,.96) 38%,rgba(7,30,43,.22) 62%,transparent 82%); }.hero-copy { width:calc(100% - 48px); }.hero-copy h1 { font-size:clamp(27px,8.5vw,34px); letter-spacing:.04em; }.hero-copy h1 span { white-space:nowrap; }.hero-lead { font-size:13px; }.mobile-only { display:block; }
   .intro h2,.story h2,.world h2,.music-direction h2,.production h2 { font-size:34px; }.format-card strong { font-size:90px; }
   .movie-head h2 { font-size:32px; }.sound-note { font-size:9px; }
   .quote-band { grid-template-columns:1fr; }.quote-band svg { display:none; }.quote-band span { grid-column:1; }.quote-band p { font-size:23px; }
