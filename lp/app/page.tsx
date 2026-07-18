@@ -40,7 +40,7 @@ export default function Home() {
       <section className="hero" id="top" aria-label="キービジュアル">
         <picture className="hero-picture">
           <source media="(min-width: 901px)" srcSet="/images/key-visual.png" />
-          <source media="(max-width: 900px)" srcSet="/images/key-visual.png" />
+          <source media="(max-width: 900px)" srcSet="/images/key-visual-clean.png" />
           <img
             src="/images/key-visual.png"
             alt="青空の学校屋上で離れて座る陽と栞、LOVED GUN キービジュアル"
@@ -51,6 +51,10 @@ export default function Home() {
             fetchPriority="high"
           />
         </picture>
+        <div className="hero-mobile-title" aria-hidden="true">
+          <strong>LOVED GUN</strong>
+          <span>ラブドガン</span>
+        </div>
         <div className="hero-shade" />
         <div className="hero-copy">
           <p className="eyebrow light">AN ORIGINAL ANIMATION PROJECT</p>
