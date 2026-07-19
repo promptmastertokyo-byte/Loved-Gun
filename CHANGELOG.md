@@ -1,5 +1,30 @@
 # CHANGELOG
 
+## 2026-07-16
+
+### Canonical alignment
+- Kept CUT001–054 as the short-film production numbering and split CUT045 into two offscreen generation clips
+- Replaced the direct climax depiction with Kura reaction, Hinata dialogue, one offscreen reaction sound, and an unharmed aftermath
+- Aligned Image-to-Video character identifiers with the approved LP layout-board images
+- Excluded the classroom board from the final film and retained it only for PV/layout reference
+- Added the 54-cut S/P/V assignment and long-cut generation windows
+- Fixed the production budget at JPY 9,000,000 before tax / JPY 9,900,000 including tax
+- Added a short-film source-of-truth file and a mapping tracker for the missing 104-cut/PV23 source files
+
+## 2026-07-15
+
+### Added
+- Final short-film scenario entry point
+- 54-cut short-film shot list with a 10-minute planning total
+- 54 Image-to-Video prompts for Seedance and ComfyUI workflows
+- Editable short-film project deck
+
+### Organized
+- Made the final short-film files the primary links in the repository README
+- Marked the 20-minute, 216-cut storyboard as legacy reference material
+- Updated screenplay, storyboard, and project-status navigation
+- Excluded generated presentation inspection sidecars from Git tracking
+
 ## 2026-07-12
 
 ### Added

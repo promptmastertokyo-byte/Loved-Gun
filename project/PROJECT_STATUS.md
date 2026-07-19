@@ -1,61 +1,54 @@
 # Project Status
 
-更新日：2026-07-11
+更新日：2026-07-16
 
-## 現在地
+## 現在の作品仕様
 
-- [x] 原作小説
-- [x] アニメ映画脚本 第1稿
-- [x] ノウメン／小面の基本設定
-- [x] World Bible 初稿
-- [x] キャラクター設定 初稿
-- [x] TVシリーズ全12話構想
-- [x] TVアニメ第1話脚本 第1稿
-- [x] 20分短編版 Beat Sheet
-- [x] Short Film Bible（Logline/Synopsis/World Bible/Character Bible/Runtime Table/
-      Cut Estimate/Sound Design/Key Visualとして分割整備済み）
-- [x] 20分短編 Treatment
-- [x] 20分短編 Screenplay Draft 1〜03（Draft03を正式版として採用）
-- [x] 絵コンテ／カットリスト（`storyboard/`、全216カット、Seedance Prompt付き）
-- [ ] 制作向け脚本決定稿
-- [ ] キャラクターデザイン設定
-- [ ] 美術・色彩・音響設計（Sound Designは初稿済み、美術・色彩設計は`storyboard/
-      STORYBOARD_BIBLE.md`で方向性を確定、確定稿は別途）
-- [ ] 1,000万円版予算書（Assumptionsのみ済み、詳細予算書は別途）
-- [ ] 制作スケジュール
-- [ ] ピッチデック
-- [ ] 映画祭応募資料
+- 2D短編アニメーション映画
+- 上映時間は未確定。約10分を目安に設計
+- 舞台は現代日本の架空の地方都市／都市部の路地裏
+- 登場人物は陽、栞、クラ、影
+- 小面／ノウメンは登場しない
+- テーマは、喪失を受け入れる勇気と、悲しみを抱えたまま歩くこと
 
-## Storyboard Phase 進捗（2026-07-11）
+## 完了
 
-- [x] `storyboard/STORYBOARD_BIBLE.md` — 画面構成・色彩・ライティング・カメラ・遷移ルール
-- [x] `storyboard/SHOTLIST.md` — 全216カットのマスター表
-- [x] `storyboard/scene01.md`〜`scene16.md`、`after_credit.md` — 全カットの詳細絵コンテ＋
-      Seedance Prompt
-- [x] `storyboard/PRODUCTION_REVIEW.md` — Seedance適性レビューと改善記録
-- 進捗率：**Storyboard Phase 100%**（次工程：キャラクターデザイン確定、背景美術確定、
-  キャラクター基準画像の管理表作成、Seedanceでのテスト生成）
+- [x] 最終シナリオ
+- [x] ショート版カット割り（CUT001–054、合計10:00の設計値）
+- [x] 全54カットのImage-to-Videoプロンプト
+- [x] キービジュアル
+- [x] キャラクター・世界設定の初稿
+- [x] LPサイト
+- [x] 編集可能な企画スライド
+- [x] GitHubへの保存と案内整理
+- [x] CUT045のオフスクリーン化（CUT045a/b＋無傷のCUT046）
+- [x] 54カット体系のS/P/V再割当
+- [x] 教室カットの裁定（本編不採用、PV／レイアウト検証専用）
+- [x] 予算表記の統一（900万円税別／990万円税込）
 
-## 短編版の制作方針
+## 現在の正式ファイル
 
-- 約20分のオリジナル短編アニメーション
-- 一つの感情「喪失を受け入れる勇気」に集中する
-- 世界観の説明を最小限にし、雨・音・しおり・能面などの映像言語で伝える
-- ノウメンの組織説明は行わない
-- 小面は観測者として登場し、正体を断定しない
-- ラブドガンは武器ではなく、閉じた感情を開く鍵として描く
+- `screenplay/SHORT_FILM_SCENARIO_FINAL.md`
+- `storyboard/short-film/SOURCE_OF_TRUTH.md`
+- `storyboard/short-film/SHOTLIST.md`
+- `storyboard/short-film/PROMPTS.md`
+- `storyboard/short-film/SPV_ASSIGNMENT.md`
+- `storyboard/short-film/CANONICAL_MAPPING.md`
+- `budget/SHORT_FILM_BUDGET_9M_EX_TAX.md`
+- `outputs/loved-gun-short-film-project-deck.pptx`
+- `lp/`
 
-## 優先タスク
+## 次工程
 
-1. `screenplay/SHORT_FILM_TREATMENT.md` の作成
-2. 20分尺に合わせたシーン数と感情曲線の確定
-3. `screenplay/SHORT_FILM_SCREENPLAY_DRAFT_01.md` の作成
-4. 想定カット数と制作負荷の算出
-5. 1,000万円以内に収めるための制作仕様決定
+- [ ] CUT001–054の絵コンテ／アニマティック作成
+- [ ] 実尺を確認してカット時間を調整
+- [ ] 陽、栞、クラ、影、ラブドガンの三面図／プロップ側面図を生成・承認して凍結
+- [ ] 白い処置室の4方向美術ボードを生成・承認して凍結
+- [ ] 未収録の104カット版／PV23枚版資料を取り込み、`CANONICAL_MAPPING.md`の外部IDを確定
+- [ ] 代表カットでComfyUI／Image-to-Videoテスト
+- [ ] 背景美術・色彩・音響設計のショート版更新
+- [ ] 制作スケジュールと予算の確定
 
-## 管理ルール
+## 旧版の扱い
 
-- 公開資料と制作秘密を分離する
-- 大幅な改訂では既存ファイルを上書きせず、バージョンを分ける
-- 説明を増やす前に、映像と行動で表現できないか確認する
-- シリーズ版と短編映画版を混同しない
+20分・216カット版の脚本、尺表、絵コンテ、小面／ノウメン関連資料は削除せず、企画履歴として保持する。現在の制作では `storyboard/short-film/SOURCE_OF_TRUTH.md` の優先順位に従い、旧版を制作原典にしない。

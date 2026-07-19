@@ -2,77 +2,85 @@
 
 ![LOVED GUN Key Visual](./assets/key-visual/loved-gun-key-visual-v1.png)
 
-自作小説『ラブドガン』を原作とする、短編アニメーション映画およびシリーズ企画の制作リポジトリです。
+2D短編アニメーション映画『ラブドガン』の企画・脚本・絵コンテ・プロモーション素材を管理するリポジトリです。
 
 > 忘れたいのは、君じゃなかった。
 
-## 作品概要
+## 現在の制作基準
 
-失恋の痛みに耐えられなくなった高校生・春川陽は、感情を預けられるという奇妙な店「感情銀行」を訪れる。
+- 形式：2D短編アニメーション映画
+- 尺：アニマティック前のため未確定（約10分を目安に設計）
+- 主人公：陽（17）
+- 登場人物：陽、栞、クラ、影
+- 小面／ノウメン：最終ショート版には登場しない
+- 正式シナリオ：[`screenplay/SHORT_FILM_SCENARIO_FINAL.md`](./screenplay/SHORT_FILM_SCENARIO_FINAL.md)
+- 正式カット割り：[`storyboard/short-film/SHOTLIST.md`](./storyboard/short-film/SHOTLIST.md)
+- 制作正典：[`storyboard/short-film/SOURCE_OF_TRUTH.md`](./storyboard/short-film/SOURCE_OF_TRUTH.md)
+- 予算：900万円（税別）／税込総額990万円
 
-頭取を名乗る時守クラとの契約によって苦しみから解放された陽だったが、日常には誰かが存在した痕跡だけが残されていた。雨の匂い、空席、ミントの香り、名前のないしおり。
+## ログライン
 
-やがて陽は、黒いスーツと白い小面を身につけた謎の人物に見つめられていることに気づく。
+亡くした恋人を「忘れるための銃」を渡された少年は、その銃口を自分自身の悲しみへ向け、痛みを抱えたまま生きることを選ぶ。
 
-## 形式
+## 主要ファイル
 
-### Short Film
+### ストーリー・脚本
 
-- 約20分の短編アニメーション映画
-- 制作予算想定：1,000万円
-- 映画祭出品、企画提案、シリーズ展開のためのパイロット作品
+- [最終シナリオ](./screenplay/SHORT_FILM_SCENARIO_FINAL.md)
+- [脚本フォルダ案内](./screenplay/README.md)
+- [ログライン](./project/LOGLINE.md)
 
-### Series Project
+### 絵コンテ・動画生成
 
-- TVアニメ全12話構想
-- 感情銀行、ラブドガン、ノウメンの世界を拡張
+- [ショート版カット割り（全54カット）](./storyboard/short-film/SHOTLIST.md)
+- [ショート版Image-to-Videoプロンプト（54制作番号・55生成クリップ）](./storyboard/short-film/PROMPTS.md)
+- [S/P/V割当と生成区間](./storyboard/short-film/SPV_ASSIGNMENT.md)
+- [カット体系対応表](./storyboard/short-film/CANONICAL_MAPPING.md)
+- [絵コンテフォルダ案内](./storyboard/README.md)
 
-## テーマ
+### 企画・公開素材
 
-- 喪失を受け入れる勇気
-- 忘れることと前へ進むことの違い
-- 感情は弱さか、存在した時間の証明か
-- 愛は記憶より長く残るのか
+- [編集可能な企画スライド](./outputs/loved-gun-short-film-project-deck.pptx)
+- [LPサイト](./lp/)
+- [キービジュアル](./assets/key-visual/loved-gun-key-visual-v1.png)
+- [キャラクター公開設定](./characters/PUBLIC_CHARACTER_BIBLE.md)
+- [作品世界設定](./world-bible/PUBLIC_WORLD_BIBLE.md)
 
-## 主要モチーフ
+### 制作管理
 
-- 雨：言葉にできない感情
-- しおり：忘れたくない時間
-- ミント：残された気配
-- 能面：封じられた感情
-- 信号：選択と人生の分岐
-- 鈴：現実と感情領域の境界
+- [現在の制作状況](./project/PROJECT_STATUS.md)
+- [次の作業](./project/NEXT_ACTIONS.md)
+- [変更履歴](./CHANGELOG.md)
+- [短編版正式予算](./budget/SHORT_FILM_BUDGET_9M_EX_TAX.md)
 
 ## ディレクトリ
 
 ```text
 Loved-Gun/
-├── project/
-├── world-bible/
-├── characters/
-├── screenplay/
-├── series/
-├── storyboard/
-├── concept-art/
-├── pitch/
-├── budget/
-└── festival/
+├── assets/          # キービジュアル
+├── characters/      # キャラクター設定・参照資料
+├── lp/              # 公式LP
+├── outputs/         # 企画スライドなどの納品物
+├── pitch/           # 企画・プロモーション資料
+├── production/      # 制作仕様（旧20分版資料を含む）
+├── project/         # 進捗・ロードマップ
+├── reviews/         # レビュー記録
+├── screenplay/      # 最終シナリオと過去稿
+├── storyboard/      # 現行ショート版と旧20分版の絵コンテ
+└── world-bible/     # 公開用世界設定
 ```
 
-## 開発ロードマップ
+## 旧20分版について
 
-1. Short Film Bible
-2. Treatment
-3. 20分版脚本
-4. 絵コンテ・カットリスト
-5. キャラクター／美術設定
-6. 1,000万円版予算・制作スケジュール
-7. ピッチデック
-8. 映画祭応募パッケージ
+以下は企画履歴として保存している旧20分版の資料で、現在の最終ショート版の制作基準ではありません。
 
-## 公開方針
+- `production/*DRAFT_02.md` / `production/*DRAFT_03.md`
+- `storyboard/SHOTLIST.md`
+- `storyboard/scene01.md`〜`scene16.md`
+- `storyboard/after_credit.md`
+- `storyboard/master-layouts/`
 
-このリポジトリには公開可能な企画資料のみを保存します。物語の核心、未公開原作、制作上の秘密設定はPrivateリポジトリまたはローカル環境で管理します。
+これらには216カット、20分、小面／ノウメン、After Creditなど、最終ショート版に採用されていない要素が含まれます。
 
 ## Rights
 

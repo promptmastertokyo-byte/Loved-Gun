@@ -1,6 +1,6 @@
 # LOVED GUN — STORYBOARD BIBLE
 
-Version 1.0
+Version 1.1
 基準資料：`assets/key-visual/loved-gun-key-visual-v1.png`, `world-bible/PUBLIC_WORLD_BIBLE.md`,
 `characters/PUBLIC_CHARACTER_BIBLE.md`, `screenplay/SHORT_FILM_SCREENPLAY_DRAFT_03.md`
 
@@ -10,6 +10,19 @@ Version 1.0
 Seedance は「動かす」担当であり、レイアウト・演出・カメラ設計は本ドキュメントと
 `SHOTLIST.md` / `scene01.md`〜`after_credit.md` が担う。
 すべてのカットは、ここに定めるルールから逸脱しないことを絵コンテ承認の基準とする。
+
+### 0.1 最終ショート版の優先ルール
+
+本Bibleの本文には旧20分版の設計履歴が残っている。最終ショート版では、以下を本文より優先する。
+
+- 制作番号は `storyboard/short-film/SHOTLIST.md` のCUT001–054を正とする。
+- 登場人物は陽、栞、クラ、影のみ。小面／ノウメン／仮面の人物／After Creditは登場させない。
+- キャラクターと衣装は `storyboard/short-film/PROMPTS.md` のCanonical identifiers、および同項に列挙した承認済みボード画像を正とする。
+- CUT045a–046はオフスクリーン演出とし、銃、銃口、引き金、身体へ向ける動作、発砲動作を画面に出さない。
+- 学校・教室は最終シナリオと54カット体系には採用しない。既存の教室ボードはPV／レイアウト検証専用の参考資料であり、本編カットへ追加しない。
+- 最終ショート版の背景ロケーションは、雨の交差点／路地、感情銀行店内／処置室、学校屋上（回想）、雨上がりの街に限定する。
+
+以下にある小面、能面、教室、旧Scene番号、216カット、After Creditへの記述は旧版の履歴であり、最終ショート版への制作指示ではない。
 
 ---
 
