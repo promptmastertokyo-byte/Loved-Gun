@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { ArrowDown, ArrowRight, Film, Music2, Play, Quote, Volume2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FaqAccordion } from "@/components/ui/accordion";
@@ -22,6 +25,37 @@ const faqs = [
 ];
 
 export default function Home() {
+  const [activeSection, setActiveSection] = useState("");
+  const [showFixedCta, setShowFixedCta] = useState(false);
+
+  useEffect(() => {
+    const hero = document.getElementById("top");
+    const heroObserver = new IntersectionObserver(
+      ([entry]) => setShowFixedCta(!entry.isIntersecting),
+      { threshold: 0.01 },
+    );
+
+    if (hero) heroObserver.observe(hero);
+
+    const sectionObserver = new IntersectionObserver(
+      (entries) => {
+        const visible = entries.find((entry) => entry.isIntersecting);
+        if (visible) setActiveSection(visible.target.id);
+      },
+      { rootMargin: "-40% 0px -55% 0px", threshold: 0 },
+    );
+    const sectionIds = ["story", "world", "characters", "gallery", "music"];
+    const sections = sectionIds
+      .map((id) => document.getElementById(id))
+      .filter((section): section is HTMLElement => Boolean(section));
+    sections.forEach((section) => sectionObserver.observe(section));
+
+    return () => {
+      heroObserver.disconnect();
+      sectionObserver.disconnect();
+    };
+  }, []);
+
   return (
     <main>
       <header className="site-header">
@@ -32,9 +66,6 @@ export default function Home() {
           <a href="#story">Story</a><a href="#world">World</a><a href="#movie">Movie</a><a href="#gallery">Gallery</a>
         </nav>
         <Button asChild variant="outline" className="header-cta"><a href="#movie"><Play size={14} fill="currentColor" />Trailer</a></Button>
-        <nav className="mobile-nav" aria-label="モバイルナビゲーション">
-          <a href="#story">Story</a><a href="#world">World</a><a href="#characters">Characters</a><a href="#gallery">Gallery</a><a href="#music">Music</a>
-        </nav>
       </header>
 
       <section className="hero" id="top" aria-label="キービジュアル">
@@ -60,10 +91,18 @@ export default function Home() {
           <p className="eyebrow light">AN ORIGINAL ANIMATION PROJECT</p>
           <h1><span>忘れたいのは、</span><span>君じゃなかった。</span></h1>
           <p className="hero-lead">亡くした恋人を忘れるための銃を渡された少年が、<br />悲しみを抱えたまま生きることを選ぶ。</p>
-          <Button asChild><a href="#movie"><Play size={16} fill="currentColor" />Trailer</a></Button>
+          <Button asChild><a href="#movie"><Play size={16} fill="currentColor" /><span className="desktop-label">Trailer</span><span className="mobile-label">予告編を観る</span></a></Button>
+          <p className="hero-cta-meta">TRAILER 1:42・音声あり</p>
+          <a className="mobile-scroll-hint" href="#intro">SCROLL <ArrowDown size={13} /></a>
         </div>
         <a className="scroll-cue" href="#intro"><span>SCROLL</span><ArrowDown size={16} /></a>
       </section>
+
+      <nav className="mobile-tabs" aria-label="モバイルセクションナビゲーション">
+        {["story", "world", "characters", "gallery", "music"].map((section) => (
+          <a key={section} href={`#${section}`} className={activeSection === section ? "is-active" : ""} aria-current={activeSection === section ? "location" : undefined}>{section}</a>
+        ))}
+      </nav>
 
       <section className="intro section" id="intro">
         <div className="section-index"><span>01</span><b>INTRODUCTION</b></div>
@@ -95,11 +134,8 @@ export default function Home() {
         <div className="story-grid">
           <div className="story-title"><p className="eyebrow">THE GRIEF LEFT BEHIND</p><h2><span>雨の路地裏に、</span><span>古い銃が</span><span>眠っている。</span></h2></div>
           <div className="story-body">
-            <p>灰色の空に細い雨が降る朝。高校生の陽は、同級生だった栞を亡くしてから、色褪せた一枚の写真を胸ポケットにしまったまま歩いている。交差点で立ち止まった陽は、自分の足元の影がわずかに遅れて動くことに気づく。</p>
-            <p>導かれるように迷い込んだ路地の奥、古い看板を掲げた店「感情銀行」。店主のクラは、壁のガラスケースに眠る古い拳銃「ラブドガン」を差し出す。人を撃つための銃ではない、見ないようにしているものを撃ち抜くための銃だと。</p>
-            <p>陽が白い壁に向けて放った一発は、壁ではなく陽自身の足元から人の形をした「影」を引きずり出す。栞だと思ったそれは、陽自身の感情そのものだとクラは告げる。逃れようとする陽に、影は写真へ手を伸ばし、部屋を黒い粒子が這う。</p>
-            <p>屋上で交わした「また来ようね」の記憶と、「忘れてもいいよ」と笑った栞の言葉を思い出しながら、陽は最後の一発を、他の誰でもない自分の胸へ向ける。</p>
-            <p>「これは痛いよ」とクラが言う。陽は答える。「忘れない。君と一緒に生きる」。悲しみは消えない。それでも陽は影を連れたまま、雨上がりの街へ一歩を踏み出す。</p>
+            <p>雨の路地裏に現れる「感情銀行」。店主のクラは、陽に古い拳銃「ラブドガン」を差し出す。それは人ではなく、見ないようにしている感情を撃ち抜くための銃だった。</p>
+            <p>「忘れられません。見えるようになるだけです」。引き金の先にいたのは、栞ではなかった。陽自身が閉じ込めてきた悲しみの影だった。</p>
           </div>
         </div>
         <div className="quote-band"><Quote size={24} /><p>忘れない。<br />君と一緒に生きる。</p><span>— HINATA</span></div>
@@ -174,6 +210,11 @@ export default function Home() {
         <Image src="/images/scenes/scene-31.png" alt="屋上の陽と栞" fill sizes="100vw" />
         <div className="final-overlay" /><div className="final-copy"><Film size={28} /><p>忘れたいのは、君じゃなかった。</p><h2>LOVED GUN</h2><span>ラブドガン</span><Button asChild><a href="#movie"><Play size={16} fill="currentColor" />Trailer</a></Button></div>
       </section>
+
+      <aside className={`mobile-fixed-cta${showFixedCta ? " is-visible" : ""}`} aria-hidden={!showFixedCta}>
+        <Button asChild><a href="#movie" tabIndex={showFixedCta ? undefined : -1}><Play size={15} fill="currentColor" />予告編を観る</a></Button>
+        <span>1:42・音声あり</span>
+      </aside>
 
       <footer><div className="footer-mark"><strong>LOVED GUN</strong><span>ラブドガン</span></div><div className="footer-links"><a href="#story">Story</a><a href="#world">World</a><a href="#movie">Movie</a><a href="#gallery">Gallery</a><a href="#music">Music</a></div><p>Original Story / Screenplay / Project / Final Direction by damefuri<br />© 2026 LOVED GUN Project</p><a className="back-top" href="#top">BACK TO TOP <ArrowRight size={14} /></a></footer>
     </main>
